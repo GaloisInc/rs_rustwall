@@ -15,6 +15,8 @@ path = "../../../../../projects/smoltcp"
 log = "0.3"
 env_logger = "0.4"
 getopts = "0.2"
+smoltcp = { git = "https://github.com/podhrmic/smoltcp", branch = "sel4", default-features = true, features = ["phy-sel4"] }
+xml-rs = "0.7.0"
 
 [replace]
 "libc:0.2.40" = { git = 'https://github.com/aisamanra/liblibc.git' }
